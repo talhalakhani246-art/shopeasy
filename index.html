@@ -1,417 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ShopEasy-Ecommerce</title>
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+    <title>ShopEasy - Ecommerce</title>
 
-  <!-- link css -->
-  <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
 
-  <!-- font awsome -->
-  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- navbar -->
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary me">
-    <div class="container you">
-      <a class="navbar-brand" href="#"><i class="fa-solid fa-cart-shopping"></i>ShopEasy</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ">
-          <li class="nav-item">
-            <a class="nav-link active ii" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active ii" aria-current="page" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active ii" aria-current="page" href="#">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active ii" aria-current="page" href="#">Contact Us</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-    <!-- Button trigger modal -->
-    ```html
-    <!-- ================= LOGIN BUTTON ================= -->
-
-    <div id="sss">
-
-      <button type="button" class="btn btn-primary bbttnn" data-bs-toggle="modal" data-bs-target="#loginModal">
-        Login
-      </button>
 
 
-      <!-- ================= LOGIN MODAL ================= -->
+    <!-- ================= NAVBAR ================= -->
 
-      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar">
 
-        <div class="modal-dialog">
-          <div class="modal-content">
+        <div class="container">
 
-            <div class="modal-header">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                ShopEasy
+            </a>
 
-              <h1 class="modal-title fs-5" id="loginModalLabel">
-                Login
-              </h1>
 
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-              </button>
+            <!-- Mobile Menu Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+
+                <!-- Center Menu -->
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Products
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Login / Signin -->
+                <div class="auth-buttons">
+
+                    <button
+                        type="button"
+                        class="btn login-btn">
+                        Login
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn signin-btn">
+                        Signin
+                    </button>
+
+                </div>
 
             </div>
 
-
-            <div class="modal-body">
-
-              <form class="row g-3 needs-validation" novalidate>
-
-                <div class="col-md-6">
-                  <label for="loginFirstName" class="form-label">
-                    First name
-                  </label>
-
-                  <input type="text" class="form-control" id="loginFirstName" required>
-
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <label for="loginLastName" class="form-label">
-                    Last name
-                  </label>
-
-                  <input type="text" class="form-control" id="loginLastName" required>
-
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-                </div>
-
-
-                <div class="col-12">
-                  <label for="loginUsername" class="form-label">
-                    Username
-                  </label>
-
-                  <div class="input-group has-validation">
-
-                    <span class="input-group-text">
-                      @
-                    </span>
-
-                    <input type="text" class="form-control" id="loginUsername" required>
-
-                    <div class="invalid-feedback">
-                      Please choose a username.
-                    </div>
-
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <label for="loginCity" class="form-label">
-                    City
-                  </label>
-
-                  <input type="text" class="form-control" id="loginCity" required>
-
-                  <div class="invalid-feedback">
-                    Please provide a valid city.
-                  </div>
-                </div>
-
-
-                <div class="col-md-3">
-                  <label for="loginState" class="form-label">
-                    Country
-                  </label>
-
-                  <select class="form-select" id="loginState" required>
-
-                    <option selected disabled value="">
-                      Choose...
-                    </option>
-
-                    <option>
-                      Pakistan
-                    </option>
-
-                  </select>
-
-                  <div class="invalid-feedback">
-                    Please select a valid country.
-                  </div>
-                </div>
-
-
-                <div class="col-md-3">
-                  <label for="loginZip" class="form-label">
-                    Zip
-                  </label>
-
-                  <input type="text" class="form-control" id="loginZip" required>
-
-                  <div class="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
-                </div>
-
-
-                <div class="col-12">
-
-                  <div class="form-check">
-
-                    <input class="form-check-input" type="checkbox" id="loginCheck" required>
-
-                    <label class="form-check-label" for="loginCheck">
-                      Agree to terms and conditions
-                    </label>
-
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
-
-                  </div>
-
-                </div>
-
-
-                <div class="col-12">
-
-                  <button class="btn btn-primary" type="submit">
-                    Login
-                  </button>
-
-                </div>
-
-              </form>
-
-            </div>
-
-          </div>
         </div>
 
-      </div>
+    </nav>
 
 
 
-      <!-- ================= SIGNIN BUTTON ================= -->
+    <!-- ================= HERO ================= -->
 
-      <button type="button" class="btn btn-primary bbttnn" data-bs-toggle="modal" data-bs-target="#signinModal">
-        Signin
-      </button>
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <h1>
+                    Welcome To
+                    <span>ShopEasy Store</span>
+                </h1>
+
+                <h3>
+                    Shop Smart. Live Better.
+                </h3>
+
+                <p>
+                    Discover amazing products, unbeatable deals,
+                    and everything you need — all in one easy
+                    shopping experience.
+                </p>
 
 
+                <!-- Hero Buttons -->
+                <div class="hero-buttons">
 
-      <!-- ================= SIGNIN MODAL ================= -->
+                    <a href="#" class="btn shop-now">
+                        Shop Now
+                    </a>
 
-      <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+                    <a href="#" class="btn explore">
+                        Explore Products
+                    </a>
 
-        <div class="modal-dialog">
-          <div class="modal-content">
-
-            <div class="modal-header">
-
-              <h1 class="modal-title fs-5" id="signinModalLabel">
-                Signin
-              </h1>
-
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-              </button>
+                </div>
 
             </div>
 
-
-            <div class="modal-body">
-
-              <form class="row g-3 needs-validation" novalidate>
-
-                <div class="col-md-6">
-
-                  <label for="signinFirstName" class="form-label">
-                    First name
-                  </label>
-
-                  <input type="text" class="form-control" id="signinFirstName" required>
-
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-
-                </div>
-
-
-                <div class="col-md-6">
-
-                  <label for="signinLastName" class="form-label">
-                    Last name
-                  </label>
-
-                  <input type="text" class="form-control" id="signinLastName" required>
-
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-
-                </div>
-
-
-                <div class="col-12">
-
-                  <label for="signinUsername" class="form-label">
-                    Username
-                  </label>
-
-                  <div class="input-group has-validation">
-
-                    <span class="input-group-text">
-                      @
-                    </span>
-
-                    <input type="text" class="form-control" id="signinUsername" required>
-
-                    <div class="invalid-feedback">
-                      Please choose a username.
-                    </div>
-
-                  </div>
-
-                </div>
-
-
-                <div class="col-md-6">
-
-                  <label for="signinCity" class="form-label">
-                    City
-                  </label>
-
-                  <input type="text" class="form-control" id="signinCity" required>
-
-                  <div class="invalid-feedback">
-                    Please provide a valid city.
-                  </div>
-
-                </div>
-
-
-                <div class="col-md-3">
-
-                  <label for="signinCountry" class="form-label">
-                    Country
-                  </label>
-
-                  <select class="form-select" id="signinCountry" required>
-
-                    <option selected disabled value="">
-                      Choose...
-                    </option>
-
-                    <option>
-                      Pakistan
-                    </option>
-
-                  </select>
-
-                  <div class="invalid-feedback">
-                    Please select a valid country.
-                  </div>
-
-                </div>
-
-
-                <div class="col-md-3">
-
-                  <label for="signinZip" class="form-label">
-                    Zip
-                  </label>
-
-                  <input type="text" class="form-control" id="signinZip" required>
-
-                  <div class="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
-
-                </div>
-
-
-                <div class="col-12">
-
-                  <div class="form-check">
-
-                    <input class="form-check-input" type="checkbox" id="signinCheck" required>
-
-                    <label class="form-check-label" for="signinCheck">
-                      Agree to terms and conditions
-                    </label>
-
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
-
-                  </div>
-
-                </div>
-
-
-                <div class="col-12">
-
-                  <button class="btn btn-success" type="submit">
-                    Signin
-                  </button>
-
-                </div>
-
-              </form>
-
-            </div>
-
-          </div>
         </div>
 
-      </div>
-
-    </div>
+    </section>
 
 
 
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
 
-
-
-
-
-
-
-  </nav>
-
-  <div class="hero">
-    <h1>Wellcome To <span>ShopEasy Store</span></h1>
-    <p class="wht">Shop Smart. Live Better.</p>
-    <p class="thw">Discover amazing products, unbeatable deals, and everything you need—all in one easy shopping experience.</p>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
