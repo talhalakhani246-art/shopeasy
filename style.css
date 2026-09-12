@@ -1,0 +1,91 @@
+:root {
+    --font-family: 'Poppins', sans-serif;
+     --primary-color: #6C63FF;
+    --secondary-color: #5148D8;
+    --accent-color: #FFB703;
+
+    --dark-color: #17172B;
+    --text-color: #2B2B3A;
+    --light-text: #6B7280;
+
+    --background-color: #F8F9FC;
+    --white-color: #FFFFFF;
+
+    --border-color: #E5E7EB;
+
+    --success-color: #22C55E;
+    --danger-color: #EF4444;
+
+    --hover-color: #5148D8;
+
+    --gradient: linear-gradient(
+        135deg,
+        #6C63FF,
+        #5148D8
+    );
+
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: var(--font-family);
+}
+.container{
+    gap: 400px !important;
+        
+}
+.navbar-nav{
+    gap: 40px !important;
+    padding-bottom: 15px !important;
+    padding-top: 20px;
+    transition: var(--transition);
+
+}
+.me{
+    background-color: var(--dark-color) !important;
+
+}
+.navbar-brand{
+    color: var(--background-color) !important;
+}
+.navbar-brand i{
+    color: var(--background-color) !important;
+}
+.ii{
+        color: var(--background-color) !important;
+}
+#sss{
+    margin-right: 70px;
+}
+.ii{
+    transition: all 0.5s ease;
+}
+.ii:hover{
+    background-color: #5148D8;
+    padding: 3px 3px;
+    border-radius: 20px;
+    transform: translateZ(-6px);
+}
+.hero{
+     background: linear-gradient(135deg, #e8f5e9, #a5d6a7);
+    min-height: 681px;
+}
+.hero h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    
+}
+.hero h1 span{
+    color: #22C55E;
+}
+.wht{
+    color: #22C55E;
+    font-weight: 400;
+    font-family: var(--font-family);
+
+}
+.thw{
+    color: #6C63FF;
+    font-weight: 600;
+    font-family: var(--font-family);
+}
