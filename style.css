@@ -433,7 +433,7 @@ body {
   --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 
   width: 190px;
-  height: 254px;
+  height: 444px;
   background: var(--card-bg);
   border-radius: 20px;
   position: relative;
@@ -661,4 +661,89 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+/* From Uiverse.io by lowa2006 */ 
+.crd {
+  width: 1000px;
+  height: 500px;
+  background: var(--green-color);
+  transition: 1s ease-in-out;
+  clip-path: polygon(
+    30px 0%,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0% 30px
+  );
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 170px;
+  margin-top: 50px;
+}
+
+.crd span {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 40px;
+}
+
+.crd .info {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 1em;
+}
+
+.crd .img img {
+  width: 4.8em;
+  height: 4.8em;
+  background: white;
+  border-radius: 15px;
+margin-left: 460px;
+margin-top: 80px;
+margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+}
+
+.crd .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.crd a {
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.crd a:hover {
+  color: var(--green-dark);
+}
+
+.crd button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: var(--green-dark);
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.crd button:hover {
+  background: var(--green-color);
+  color: white;
+  cursor: pointer;
 }
