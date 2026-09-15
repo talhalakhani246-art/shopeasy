@@ -17,8 +17,10 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
-    <!-- Your CSS -->
+    <!--  CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.html">
+    <link rel="stylesheet" href="login.html">
 </head>
 
 <body>
@@ -26,7 +28,7 @@
 
     <!-- ================= NAVBAR ================= -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar sticky-top" id="main-nav">
 
         <div class="container">
 
@@ -59,19 +61,19 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#hover2">
                             About
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#hover">
                             Products
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#cnt">
                             Contact Us
                         </a>
                     </li>
@@ -82,13 +84,13 @@
                 <!-- Login / Signin -->
                 <div class="auth-buttons">
 
-                    <button type="button" class="btn login-btn">
-                        Login
-                    </button>
+                    <a target="_blank" href="register.html"><button type="button" class="btn login-btn">
+                        Rejister
+                    </button></a>
 
-                    <button type="button" class="btn signin-btn">
-                        Signin
-                    </button>
+                    <a target="_blank" href="login.html"><button type="button" class="btn signin-btn" id="sgn">
+                        Login
+                    </button></a>
 
                 </div>
 
@@ -127,7 +129,7 @@
                 <!-- Hero Buttons -->
                 <div class="hero-buttons">
 
-                    <a href="#" class="btn shop-now">
+                    <a href="#hover" class="btn shop-now">
                         Shop Now
                     </a>
 
@@ -145,7 +147,7 @@
     <div class="card-head">
         <h1>Products</h1>
     </div>
-    <div class="container">
+    <div class="container" id="hover">
         <div class="card-content">
             <!-- From Uiverse.io by SachinKumar666 -->
             <div class="card">
@@ -394,11 +396,11 @@
     <div class="card-head">
         <h1>About Us</h1>
     </div>
-    <div class="container">
+    <div class="container" id="hover2">
 
 
         <div class="about-content">
-            <!-- From Uiverse.io by lowa2006 -->
+            
             <div class="crd">
                 <div class="img"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnXUk5JzINTbtIFQ18seYonq6ZCWVOza3mhOeCPArjYw&s=10"
@@ -445,7 +447,134 @@
     </div>
     </div>
 
+   <!-- Contact Section -->
+    <section class="contact-section">
 
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center contact-heading" id="cnt">
+                <h1>Contact Us</h1>
+                <p>
+                    Have a question or need help? 
+                    We would love to hear from you.
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Left Side -->
+                <div class="col-lg-5">
+
+                    <div class="contact-info">
+
+                        <h2>Get In Touch</h2>
+
+                        <p>
+                            Feel free to contact us for any questions,
+                            suggestions or information about our products.
+                        </p>
+
+                        <!-- Email -->
+                        <div class="info-box">
+                            <div class="icon">✉</div>
+
+                            <div>
+                                <h5>Email</h5>
+                                <p>info@shopeasy.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="info-box">
+                            <div class="icon">☎</div>
+
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+92 300 1234567</p>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="info-box">
+                            <div class="icon">📍</div>
+
+                            <div>
+                                <h5>Address</h5>
+                                <p>Karachi, Pakistan</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right Side Form -->
+                <div class="col-lg-7">
+
+                    <div class="contact-form">
+
+                        <h2>Send Us A Message</h2>
+
+                        <form>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <label>Your Name</label>
+                                    <input 
+                                        type="text" 
+                                        class="form-control"
+                                        placeholder="Enter your name"
+                                    >
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label>Email Address</label>
+                                    <input 
+                                        type="email" 
+                                        class="form-control"
+                                        placeholder="Enter your email"
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <label>Subject</label>
+
+                            <input 
+                                type="text"
+                                class="form-control"
+                                placeholder="Enter subject"
+                            >
+
+
+                            <label>Message</label>
+
+                            <textarea 
+                                class="form-control"
+                                rows="5"
+                                placeholder="Write your message..."
+                            ></textarea>
+
+
+                            <button type="submit" class="send-btn" onclick="alert('Message sucessfully submitted')">
+                                Send Message
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
     <!-- Bootstrap JS -->

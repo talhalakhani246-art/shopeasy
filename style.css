@@ -18,6 +18,16 @@
     --white-color: #FFFFFF;
 
     --transition: all 0.3s ease;
+       --green: #198754;
+    --dark-green: #126b43;
+
+    --blue: #0d6efd;
+    --light-blue: #eaf3ff;
+
+    --white: #ffffff;
+    --light-bg: #f5fbf8;
+
+    --text: #333333;
 }
 
 
@@ -208,7 +218,11 @@ body {
     padding: 80px 20px;
 }
 
+.main-nav{
+  position: fixed;
+  z-index: 1000;
 
+}
 
 /* ================= HERO CONTENT ================= */
 
@@ -428,7 +442,7 @@ body {
 
 .card {
   --card-bg: #ffffff;
-  --card-accent: #7c3aed;
+  --card-accent: var(--green-color);
   --card-text: #1e293b;
   --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 
@@ -632,7 +646,7 @@ body {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
-    color: #5148D8;
+    color: var(--green-dark);
 }
 .container {
     display: flex;
@@ -746,4 +760,795 @@ margin-bottom: 50px;
   background: var(--green-color);
   color: white;
   cursor: pointer;
+}
+
+/* =========================
+   REGISTER FORM
+========================= */
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 350px;
+
+    background-color: whitesmoke;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    margin: 100px auto;
+}
+
+
+.register-title {
+    font-size: 28px;
+
+    color: royalblue;
+
+    font-weight: 600;
+
+    letter-spacing: -1px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 30px;
+}
+
+
+.register-title::before,
+.register-title::after {
+
+    position: absolute;
+
+    content: "";
+
+    height: 18px;
+
+    width: 18px;
+
+    border-radius: 50%;
+
+    left: 0;
+
+    background-color: royalblue;
+}
+
+
+.register-title::after {
+
+    animation: register-pulse 1s linear infinite;
+}
+
+
+.register-message,
+.register-signin {
+
+    color: rgba(88, 87, 87, 0.822);
+
+    font-size: 14px;
+}
+
+
+.register-signin {
+
+    text-align: center;
+}
+
+
+.register-signin a {
+
+    color: royalblue;
+
+    text-decoration: none;
+}
+
+
+.register-signin a:hover {
+
+    text-decoration: underline;
+}
+
+
+.register-flex {
+
+    display: flex;
+
+    width: 100%;
+
+    gap: 6px;
+}
+
+
+.register-form label {
+
+    position: relative;
+
+    width: 100%;
+}
+
+
+.register-input {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    outline: none;
+
+    border: 1px solid rgba(105, 105, 105, 0.397);
+
+    border-radius: 10px;
+}
+
+
+.register-form label span {
+
+    position: absolute;
+
+    left: 10px;
+
+    top: 12px;
+
+    color: grey;
+
+    font-size: 0.9em;
+
+    cursor: text;
+
+    transition: 0.3s ease;
+
+    background-color: whitesmoke;
+
+    padding: 0 3px;
+}
+
+
+.register-input:focus + span,
+.register-input:valid + span {
+
+    top: -7px;
+
+    font-size: 0.7em;
+
+    font-weight: 600;
+
+    color: royalblue;
+}
+
+
+.register-submit {
+
+    border: none;
+
+    outline: none;
+
+    background-color: royalblue;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.register-submit:hover {
+
+    background-color: rgb(56, 90, 194);
+}
+
+
+@keyframes register-pulse {
+
+    from {
+
+        transform: scale(0.9);
+
+        opacity: 1;
+
+    }
+
+    to {
+
+        transform: scale(1.8);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+
+/* =========================
+   LOGIN FORM
+========================= */
+
+.login-container {
+
+    width: 320px;
+
+    border-radius: 0.75rem;
+
+    background-color: rgba(17, 24, 39, 1);
+
+    padding: 2rem;
+
+    color: rgba(243, 244, 246, 1);
+
+    margin: 150px auto;
+
+}
+
+
+.login-title {
+
+    text-align: center;
+
+    font-size: 1.5rem;
+
+    line-height: 2rem;
+
+    font-weight: 700;
+
+    margin: 0;
+}
+
+
+.login-form {
+
+    margin-top: 1.5rem;
+}
+
+
+.login-input-group {
+
+    margin-top: 0.25rem;
+
+    font-size: 0.875rem;
+
+    line-height: 1.25rem;
+}
+
+
+.login-input-group label {
+
+    display: block;
+
+    color: rgba(156, 163, 175, 1);
+
+    margin-bottom: 4px;
+}
+
+
+.login-input-group input {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border-radius: 0.375rem;
+
+    border: 1px solid rgba(55, 65, 81, 1);
+
+    outline: none;
+
+    background-color: rgba(17, 24, 39, 1);
+
+    padding: 0.75rem 1rem;
+
+    color: rgba(243, 244, 246, 1);
+}
+
+
+.login-input-group input:focus {
+
+    border-color: rgba(167, 139, 250, 1);
+}
+
+
+.login-forgot {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    font-size: 0.75rem;
+
+    margin: 8px 0 14px 0;
+}
+
+
+.login-forgot a {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+.login-forgot a:hover {
+
+    text-decoration: underline;
+}
+
+
+.login-sign {
+
+    display: block;
+
+    width: 100%;
+
+    background-color: rgba(167, 139, 250, 1);
+
+    padding: 0.75rem;
+
+    text-align: center;
+
+    color: rgba(17, 24, 39, 1);
+
+    border: none;
+
+    border-radius: 0.375rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.login-sign:hover {
+
+    background-color: rgb(145, 115, 230);
+}
+
+
+.login-social-message {
+
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 1rem;
+}
+
+
+.login-line {
+
+    height: 1px;
+
+    flex: 1;
+
+    background-color: rgba(55, 65, 81, 1);
+}
+
+
+.login-message {
+
+    padding-left: 0.75rem;
+
+    padding-right: 0.75rem;
+
+    font-size: 0.875rem;
+
+    color: rgba(156, 163, 175, 1);
+}
+
+
+.login-social-icons {
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.login-icon {
+
+    border-radius: 0.125rem;
+
+    padding: 0.75rem;
+
+    border: none;
+
+    background-color: transparent;
+
+    margin-left: 8px;
+
+    cursor: pointer;
+}
+
+
+.login-icon svg {
+
+    height: 1.25rem;
+
+    width: 1.25rem;
+
+    fill: white;
+}
+
+
+.login-signup {
+
+    text-align: center;
+
+    font-size: 0.75rem;
+
+    color: rgba(156, 163, 175, 1);
+}
+
+
+.login-signup a {
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+
+.login-signup a:hover {
+
+    text-decoration: underline;
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 500px) {
+
+    .register-form {
+
+        width: 90%;
+
+        box-sizing: border-box;
+
+        margin: 50px auto;
+    }
+
+
+    .register-flex {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .login-container {
+
+        width: 90%;
+
+        box-sizing: border-box;
+
+        margin: 80px auto;
+    }
+
+}
+
+
+
+
+
+body {
+
+    margin: 0;
+
+   
+
+
+
+    color: var(--text);
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+
+    padding: 80px 0;
+
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.contact-heading {
+
+    margin-bottom: 50px;
+}
+
+.contact-heading h1 {
+
+    font-size: 45px;
+
+    font-weight: 700;
+
+    color: var(--green);
+
+    margin-bottom: 10px;
+}
+
+.contact-heading p {
+
+    color: #666;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   LEFT CONTACT BOX
+========================= */
+
+.contact-info {
+
+    height: 100%;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        var(--green),
+        var(--blue)
+    );
+
+    color: white;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+}
+
+
+.contact-info h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.contact-info > p {
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+    color: #f5f5f5;
+}
+
+
+/* =========================
+   INFORMATION BOX
+========================= */
+
+.info-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Icon */
+
+.icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    color: var(--green);
+
+    font-size: 22px;
+}
+
+
+.info-box h5 {
+
+    margin: 0 0 5px;
+
+    font-size: 17px;
+}
+
+
+.info-box p {
+
+    margin: 0;
+
+    color: #e9f5ff;
+}
+
+
+/* =========================
+   RIGHT FORM
+========================= */
+
+.contact-form {
+
+    background-color: var(--white);
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+
+.contact-form h2 {
+
+    color: var(--blue);
+
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.contact-form label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 7px;
+
+    font-weight: 600;
+
+    color: #333;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.contact-form .form-control {
+
+    padding: 12px 15px;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 8px;
+}
+
+
+/* Input Focus */
+
+.contact-form .form-control:focus {
+
+    border-color: var(--green);
+
+    box-shadow: 0 0 0 3px rgba(25,135,84,0.12);
+}
+
+
+/* =========================
+   SEND BUTTON
+========================= */
+
+.send-btn {
+
+    margin-top: 25px;
+
+    padding: 13px 30px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: var(--green);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Hover */
+
+.send-btn:hover {
+
+    background-color: var(--blue);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .contact-section {
+
+        padding: 50px 15px;
+
+    }
+
+    .contact-heading h1 {
+
+        font-size: 35px;
+
+    }
+
+    .contact-info,
+    .contact-form {
+
+        padding: 25px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .contact-heading h1 {
+
+        font-size: 30px;
+
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+
+        font-size: 25px;
+
+    }
+
+    .send-btn {
+
+        width: 100%;
+
+    }
+
 }
